@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AndroidAlarmActivity">
+
+
+    <TextView
+        android:id="@+id/backgroundLabel"
+        android:layout_width="117dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="43dp"
+        android:text="@string/background_label"
+        android:textSize="21sp"
+        app:layout_constraintStart_toEndOf="@+id/soundComboBox"
+        app:layout_constraintTop_toBottomOf="@+id/currentTime" />
+
+    <TextView
+        android:id="@+id/soundLabel"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="43dp"
+        android:text="@string/sound_label"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentTime" />
+
+    <Button
+        android:id="@+id/offButton"
+        android:layout_width="390dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="89dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="111dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="49dp"
+        android:text="@string/off_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hourEditText3" />
+
+    <Spinner
+        android:id="@+id/soundComboBox"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="43dp"
+        app:layout_constraintStart_toEndOf="@+id/soundLabel"
+        app:layout_constraintTop_toBottomOf="@+id/currentTime" />
+
+    <Spinner
+        android:id="@+id/backgroundComboBox"
+        android:layout_width="90dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="43dp"
+        app:layout_constraintStart_toEndOf="@+id/backgroundLabel"
+        app:layout_constraintTop_toBottomOf="@+id/currentTime" />
+
+    <EditText
+        android:id="@+id/hourEditText1"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="@string/hour_edit_text1"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/soundLabel" />
+
+    <EditText
+        android:id="@+id/minuteEditText1"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="@string/minute_edit_text1"
+        android:textSize="60sp"
+        app:layout_constraintStart_toEndOf="@+id/separatorLabel1"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundLabel" />
+
+    <EditText
+        android:id="@+id/hourEditText2"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="@string/hour_edit_text2"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hourEditText1" />
+
+    <EditText
+        android:id="@+id/hourEditText3"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="@string/hour_edit_text3"
+        android:textSize="60sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hourEditText2" />
+
+    <EditText
+        android:id="@+id/minuteEditText2"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="@string/minute_edit_text2"
+        android:textSize="60sp"
+        app:layout_constraintStart_toEndOf="@+id/separatorLabel2"
+        app:layout_constraintTop_toBottomOf="@+id/minuteEditText1" />
+
+    <EditText
+        android:id="@+id/minuteEditText3"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="@string/minute_edit_text3"
+        android:textSize="60sp"
+        app:layout_constraintStart_toEndOf="@+id/separatorLabel3"
+        app:layout_constraintTop_toBottomOf="@+id/minuteEditText2" />
+
+    <TextView
+        android:id="@+id/separatorLabel2"
+        android:layout_width="30dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/separator_label2"
+        android:textSize="70sp"
+        app:layout_constraintStart_toEndOf="@+id/hourEditText2"
+        app:layout_constraintTop_toBottomOf="@+id/separatorLabel1" />
+
+    <TextView
+        android:id="@+id/separatorLabel3"
+        android:layout_width="30dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/separator_label3"
+        android:textSize="70sp"
+        app:layout_constraintStart_toEndOf="@+id/hourEditText3"
+        app:layout_constraintTop_toBottomOf="@+id/separatorLabel2" />
+
+    <Button
+        android:id="@+id/addButton1"
+        android:layout_width="43dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/add_button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundComboBox" />
+
+    <Button
+        android:id="@+id/removeButton1"
+        android:layout_width="43dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/remove_button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addButton1" />
+
+    <Button
+        android:id="@+id/addButton2"
+        android:layout_width="43dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/add_button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/removeButton1" />
+
+    <Button
+        android:id="@+id/removeButton2"
+        android:layout_width="43dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/remove_button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addButton2" />
+
+    <Button
+        android:id="@+id/addButton3"
+        android:layout_width="43dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/add_button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/removeButton2" />
+
+    <Button
+        android:id="@+id/removeButton3"
+        android:layout_width="43dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/remove_button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addButton3" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="10dp"
+        android:text="ToggleButton"
+        app:layout_constraintStart_toEndOf="@+id/minuteEditText1"
+        app:layout_constraintTop_toBottomOf="@+id/ampmComboBox1" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="10dp"
+        android:text="ToggleButton"
+        app:layout_constraintStart_toEndOf="@+id/minuteEditText2"
+        app:layout_constraintTop_toBottomOf="@+id/ampmComboBox2" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="10dp"
+        android:text="ToggleButton"
+        app:layout_constraintStart_toEndOf="@+id/minuteEditText3"
+        app:layout_constraintTop_toBottomOf="@+id/ampmComboBox3" />
+
+    <TextView
+        android:id="@+id/separatorLabel1"
+        android:layout_width="30dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/separator_label1"
+        android:textSize="70sp"
+        app:layout_constraintStart_toEndOf="@+id/hourEditText1"
+        app:layout_constraintTop_toBottomOf="@+id/soundComboBox" />
+
+    <Spinner
+        android:id="@+id/ampmComboBox1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="46dp"
+        app:layout_constraintStart_toEndOf="@+id/minuteEditText1"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundLabel" />
+
+    <Spinner
+        android:id="@+id/ampmComboBox2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toEndOf="@+id/minuteEditText2"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton1" />
+
+    <Spinner
+        android:id="@+id/ampmComboBox3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toEndOf="@+id/minuteEditText3"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton2" />
+
+    <TextView
+        android:id="@+id/currentTime"
+        android:layout_width="426dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginRight="87dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/current_time"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Android Alarm</string>
+    <string name="background_label">Background:</string>
+    <string name="snooze_label">Snooze:</string>
+    <string name="sound_label">Sound:</string>
+    <string name="separator_label1">:</string>
+    <string name="separator_label2">:</string>
+    <string name="separator_label3">:</string>
+    <string name="snooze_button">SNOOZE</string>
+    <string name="off_button">OFF</string>
+    <string name="add_button1">+</string>
+    <string name="add_button2">+</string>
+    <string name="add_button3">+</string>
+    <string name="remove_button1">-</string>
+    <string name="remove_button2">-</string>
+    <string name="remove_button3">-</string>
+    <string name="hour_edit_text1">01</string>
+    <string name="hour_edit_text2">01</string>
+    <string name="hour_edit_text3">01</string>
+    <string name="minute_edit_text1">00</string>
+    <string name="minute_edit_text2">00</string>
+    <string name="minute_edit_text3">00</string>
+    <string name="alarm_label">Alarm:</string>
+    <string name="current_time" />
+    <string-array name="spinner_options1">
+        <item>1MIN</item>
+        <item>2MIN</item>
+        <item>3MIN</item>
+        <item>4MIN</item>
+    </string-array>
+    <string-array name="spinner_options2">
+        <item>Alert</item>
+        <item>Beep</item>
+        <item>Classic</item>
+        <item>Old</item>
+    </string-array>
+    <string-array name="spinner_options3">
+        <item>Summer</item>
+        <item>Ocean</item>
+        <item>Woods</item>
+        <item>Dunes</item>
+    </string-array>
+    <string-array name="spinner_options4">
+        <item>AM</item>
+        <item>PM</item>
+    </string-array>
+
+</resources>
